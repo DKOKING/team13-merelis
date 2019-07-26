@@ -7,35 +7,32 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+      
   </head>
     <body>
       <div class="header">
         <h1>MY MINI ME</h1>
-        <p>A Character Creator </p>
+        
+        <p>A Character Creator</p>
       </div>
 
       <div class="navbar">
-        <a href="/avatar">Avatar</a>
-        <a href="/quiz">Quiz</a>
-      </div>
+        
+          <a href="/avatar">Avatar</a>
+          <a href="/quiz">Quiz</a>
+          <a href="/info">Info</a>
+        </div>
 
-      <div class="row">
-        <div class="side">
-          <h2>About Us </h2>
-          <h5>We are the creators:</h5>
-          <div class="fakeimg" style="height:200px;"><img src="https://cdn.glitch.com/5328b537-3bd7-4315-bf2d-b7a1dff7e629%2Fdt%20(1).jpg?v=1563984724647" height="200" width="200"></div>
-          <div class="fakeimg" style="height:200px;"><img src="https://cdn.glitch.com/5328b537-3bd7-4315-bf2d-b7a1dff7e629%2Faq.jpg?v=1563984715614" height="200" width="200"></div>
-          <div class="fakeimg" style="height:200px;"><img src="https://cdn.glitch.com/5328b537-3bd7-4315-bf2d-b7a1dff7e629%2Fko%20(1).jpg?v=1563984738743" height="200" width="200"></div>
-          <div class="fakeimg" style="height:200px;"><img src="https://cdn.glitch.com/5328b537-3bd7-4315-bf2d-b7a1dff7e629%2Fmp.jpg?v=1563991180785" height="200" width="200"></div>
-          <p>We have created a game-themed like personality quiz that expresses you as a person</p>
-          <h3>Our Project</h3>
-          <p> This project <strong>main focus</strong> is to make an avatar based on the users prefrences</p>
-        </div>
-      </div>
-        <div class="footer">
-          <h2>Footer</h2>
-          <a href="#" class="fa fa-google"></a>
-        </div>
+        <script>
+          function openForm() {
+            document.getElementById("myForm").style.display = "block";
+          }
+
+          function closeForm() {
+            document.getElementById("myForm").style.display = "none";
+          }
+        </script>
     </body>
 </html>
 
@@ -45,28 +42,55 @@
 
 /* Style the body */
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Press Start 2P', cursive;
   margin: 0;
 }
   
 
+#sign-in{
+  display: none;
+  border-style:solid;
+  border-radius:6px;
+  border-color: black;
+  width:600px;
+  postion: center;
+}
+#login{
+float:right;    
+border-radius:;
+border-color: white;
+font-size: 20px;
+background-color: transparent;
+color:white;
+}
+
 /* Header/logo Title */
 .header {
-  padding: 80px;
+  padding: 400px;
   text-align: center;
   background: white;
   color: black;
+  height: 10px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(white,blue,black); /* Standard syntax (must be last) */
+  width:100;
 }
 
 /* Increase the font size of the heading */
 .header h1 {
-  font-size: 40px;
+  font-size: 50px;
 }
-
+  p{
+    font-size: 25px;
+  }
 /* Style the top navigation bar */
 .navbar {
   overflow: hidden;
   background-color: black;
+}
+img:hover {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
 }
 
 /* Style the navigation bar links */
@@ -75,7 +99,7 @@ body {
   display: block;
   color: white;
   text-align: center;
-  padding: 14px 20px;
+  padding: 15px 20px;
   text-decoration: none;
 }
 
@@ -83,13 +107,14 @@ body {
 .navbar a.right {
   float: right;
 }
-
+ 
 /* Change color on hover */
 .navbar a:hover {
   background-color: brown;
   color: black;
 }
 
+  
 /* Column container */
 .row {  
   display: -ms-flexbox; /* IE10 */
@@ -112,14 +137,19 @@ body {
   -ms-flex: 70%; /* IE10 */
   flex: 70%;
   background-color: brown;
-  padding: 20px;
+  padding: 15px;
 }
 
 /* Fake image, just for this example */
 .fakeimg {
   background-color: white;
-  width: 50%;
+  width: 5%;
   padding: 5px;
+  border-radius: 20px;
+  background: red;
+  padding: 5px; 
+  width: 80px;
+  height: 80px;
 }
 
 .fa {
@@ -133,10 +163,11 @@ body {
 
 /* Footer */
 .footer {
-  padding: 50px;
+  padding: 100px;
   text-align: center;
-  background: black;
-
+  
+  background-repeat: clear
+  background-attachment: fixed;
 
 
 .fa-google {
@@ -146,7 +177,7 @@ body {
 }
 
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
   .row {   
     flex-direction: column;
   }
@@ -159,4 +190,5 @@ body {
     width: 100%;
   }
 }
+
 </style>

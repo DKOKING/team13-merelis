@@ -13,7 +13,28 @@
 	</div>
 	<br>
 	<h1>Here's your avatar</h1>
-	<h1>{{{userAvatar}}}</h1>
+
+	<img id="skin" src="{{avSkin}}">
+	<img id="hair" src="{{avHair}}">
+	<img id="shirt" src="{{avShirt}}">
+	<img id="pants" src="{{avPants}}">
+
+<style>
+	body{
+		font-family:'Press Start 2P', cursive;
+		background-color: white;
+		background-image: linear-gradient(to right, brown , red , orange,brown); 
+	}
+	img{
+		position: absolute;
+		left: 0px;
+	}
+	#skin{
+	z-index: -1;
+	}
+
+
+</style>
 	
 
 </body>

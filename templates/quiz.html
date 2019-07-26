@@ -16,18 +16,22 @@
 
       <h1>What is your character's personality?</h1>
 
-      <h2>You see and old man crossing?</h2>
+      <h2>You see an old man crossing, Whaddya do?</h2>
       <br>
       <input type="radio" id="q1a" name="q1">
-      <label for="q1a">help walk him to safety</label>
+      <label for="q1a">Help walk him to safety</label>
       <br>
 
       <input type="radio" id="q1b" name="q1">
-      <label for="q1b">walk past him</label>
+      <label for="q1b">Push Him</label>
       <br>
 
       <input type="radio" id="q1c" name="q1">
-      <label for="q1c">push him</label>
+      <label for="q1c">Leave him alone</label>
+      <br>
+
+      <input type="radio" id="q1d" name="q1">
+      <label for="q1d">I'll help for a price</label>
       <br>
       <img src = "https://cdn.glitch.com/5328b537-3bd7-4315-bf2d-b7a1dff7e629%2Fold.gif?v=1564001287446" width = "250" height = "250">
 
@@ -36,15 +40,19 @@
       <h2>You see a woman drop $100 on the ground?</h2>
       <br>
       <input type="radio" id="q2a" name="q2">
-      <label for="q2a">pick it up give it back to her</label>
+      <label for="q2a">Pick it up give it back to her</label>
       <br>
 
       <input type="radio" id="q2b" name="q2">
-      <label for="q2b">walk past it and say nothing</label>
+      <label for="q2b">Give back the $100 to disract and steal some more while she isn't looking</label>
       <br>
 
       <input type="radio" id="q2c" name="q2">
-      <label for="q2c">pick it up and keep it</label>
+      <label for="q2c">Leave it alone</label>
+      <br>
+
+      <input type="radio" id="q2c" name="q2">
+      <label for="q2d">Pocket the Money</label>
       <br>
       <img src = "https://cdn.glitch.com/5328b537-3bd7-4315-bf2d-b7a1dff7e629%2Fmoney.png?v=1564001275874" width = "250" height = "250">
 
@@ -55,11 +63,11 @@
         <br>
 
         <input type="radio" id="q3a" name="q3">
-        <label for="q3a">I don't have time for this trash</label>
+        <label for="q3a">I'll donate as much as I can!</label>
         <br>
 
         <input type="radio" id="q3b" name="q3">
-        <label for="q3b">give $12 towards the donations</label>
+        <label for="q3b">Leave trash to be trash</label>
         <br>
 
         <input type="radio" id="q3c" name="q3">
@@ -67,7 +75,7 @@
         <br>
 
         <input type="radio" id="q3d" name="q3">
-        <label for="q3d">flash your money in their faces and call them poor</label>
+        <label for="q3d">Flash your money in their faces and call them poor</label>
         <br>
         <img src= "https://res.cloudinary.com/pixel-art/image/upload/v1554279339/family/122892-family-pixel-art.png" width= "250" height= "250">
         </div>
@@ -77,19 +85,19 @@
           <br>
 
           <input type="radio" id="q4a" name="q4">
-          <label for="q4a">Just a normal one</label>
+          <label for="q4a">Fun one with friends!</label>
           <br>
 
           <input type="radio" id="q4b" name="q4">
-          <label for="q4b">a rich life where everyone looks up to you</label>
+          <label for="q4b">One where I get to H U R T people</label>
           <br>
 
           <input type="radio" id="q4c" name="q4">
-          <label for="q4c">A fun one with my friends!</label>
+          <label for="q4c">A normal one</label>
           <br>
 
           <input type="radio" id="q4d" name="q4">
-          <label for="q4d">One where I get to bite people to death</label>
+          <label for="q4d">One where I have a whole buncha' money!</label>
           <br>
           <img src="https://cdn.glitch.com/5328b537-3bd7-4315-bf2d-b7a1dff7e629%2Flife.jpg?v=1564001263672" width= "450" height= "250">
           </div>
@@ -103,15 +111,15 @@
             <br>
 
             <input type="radio" id="q5b" name="q5">
-            <label for="q5b">lion</label>
+            <label for="q5b">coyote</label>
             <br>
 
             <input type="radio" id="q5c" name="q5">
-            <label for="q5c">cat</label>
+            <label for="q5c">turtle</label>
             <br>
 
             <input type="radio" id="q5d" name="q5">
-            <label for="q5d">turtle</label>
+            <label for="q5d">cat</label>
             <br>
             <img src = "https://iconstore.co/wp-content/uploads/2016/07/animal-pixel-art-icons-featured.png" width= "250" height= "250">
             </div>
@@ -187,27 +195,27 @@
         console.log(score);
 
         if(score<=20 && score>=16){
-        personality="Tsuna";
-        description = "You are someone who's life doesn't always go right, but you know you'll be fine with your friends in the end. You only fight for your friends";
-        portrait = "tsuna-san.jpg";
+        personality="Kind";
+		description = "You show kindness and empathy towards others. You always are down to help out with everything, as long as it's just. Well, except for helping with that bank robery, but that doesn't matter";
+        portrait = "https://orig00.deviantart.net/01e0/f/2015/208/1/b/untitled_by_coolkid44154-d933yjt.png";
         console.log(personality);
         }
         else if(score<=16 && score>=11){
-        personality="Gokudera";
-        description = "You are someone who can only be open with few people. Otherwise you push people away and act like a delinquent, when truly you care. You fight to be there for your friends";
-        portrait = "gokudera-san.jpg";
+        personality="Mean";
+        description = "You are very rough around the edges and very mean towards others, especially your friends. But you care, you just have an odd way of showing it...Ya Big Ole' Meanie!";
+        portrait = "https://i.ytimg.com/vi/hAzupe_Jud4/maxresdefault.jpg";
         console.log(personality);
         }
         else if(score<=10 && score>=6){
-        personality="Yamamoto";
-        description = "You are a happy go lucky person who is always positive. You show ignorance as your bravery for your friends even if you know you guys are in trouble. You fight to be a hero";
-        portrait = "yamamoto-san.jpg";
+        personality="Passive";
+        description = "You are friends with very few, and not very approaching or forward. However, you make up for it by being very kind to your true friends, and you tend to be animated.";
+        portrait = "https://i.pinimg.com/originals/10/90/3c/10903c69439a6668a7decd784180de6d.jpg";
         console.log(personality);
         }
         else if(score<=5 && score>=0){
-        personality="Hibari";
-        description="You are a distant a . You are mysterious. All fear you, and you distance yourself from crowds. You have pure heart...pure unadulturated wrath. You fight to fight.";
-        portrait = "hibari-san.jpg";
+        personality="Selfish";
+        description="You are a Meowth. 'What does that mean?', you ask, well you are particulary greedy with what is and isn't yours. You didn't share your toys in the playpin. You only share to those whom you truly trust, you are also very funny.";
+        portrait = "https://data.whicdn.com/images/185912159/large.png";
         console.log(personality);
         }
         return personality;

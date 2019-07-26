@@ -7,6 +7,8 @@
   <body>
     <h1>What does your Mini-Me look like?</h1>
     
+    <form method="post" action="/results">
+
       <div class="question">
       <h2>whats your skin tone?</h2>
       <br>   
@@ -45,8 +47,8 @@
           <h2>what shirt do you have on?</h2>
           <h5>short sleeve(ss) long sleeve(ls)</h5>
           <br>
-            <div class = "shirts">
-            <img src ="https://cdn.glitch.com/5328b537-3bd7-4315-bf2d-b7a1dff7e629%2Fpixil-frame-0%20(14).png?1563989596596" width = "150" height ="150">
+            <div class ="shirts">
+            <img src ="https://cdn.glitch.com/5328b537-3bd7-4315-bf2d-b7a1dff7e629%2Fpixil-frame-0%20(14).png?1563989596596" width = "150" height = "150">
             <img src ="https://cdn.glitch.com/5328b537-3bd7-4315-bf2d-b7a1dff7e629%2Fpixil-frame-0%20(12).png?1563989597155" width ="150" height = "150">
             <img src ="https://cdn.glitch.com/5328b537-3bd7-4315-bf2d-b7a1dff7e629%2Fpixil-frame-0%20(13).png?1563989597321" width ="150" height = "150">
             <img src ="https://cdn.glitch.com/5328b537-3bd7-4315-bf2d-b7a1dff7e629%2Fpixil-frame-0%20(15).png?1563989597240" width ="150" height = "150">
@@ -59,7 +61,7 @@
               <option value="ss3">orange (ss)</option>
               <option value="ls1">purple (ls)</option>
               <option value="ls2">white (ls)</option>
-              <option value="ls3">gray (ls)</option>
+              <option value="ls3">gray (ls)</option> 
             </select>
           </div>
 
@@ -84,8 +86,9 @@
               </select>
             </div>
           <br>
-        <button id="submit-form" type="Submit">Submit</button>
-      <div id="results"></div>
+
+      	<input type="submit" value="Go!">
+  </form>
   </body>
 
 </html>
